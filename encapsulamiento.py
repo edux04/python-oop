@@ -15,20 +15,3 @@ player1 = Character(
 )
 
 print(player1.speed)
-
-
-class Ground:
-    def __init__(self, friction):
-        self.friction = friction
-
-    def applyFriction(self, character):
-        character.speed *= self.friction
-
-
-# Crear la instancia de la clase Ground
-ground = Ground(friction=0.9)
-
-# Aplicar la fricción a los personajes
-ground.applyFriction(player1)
-
-print(player1.speed)
